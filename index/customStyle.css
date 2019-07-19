@@ -1,0 +1,214 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Proxima Nova";
+	background-color: #f1f1f1;
+}
+@font-face {font-family: "Proxima Nova";
+  src: url("customFont/bf9f5d50c1b928ff21436517a1a95ad9.eot"); /* IE9*/
+  src: url("customFont/bf9f5d50c1b928ff21436517a1a95ad9.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("customFont/bf9f5d50c1b928ff21436517a1a95ad9.woff2") format("woff2"), /* chrome、firefox */
+  url("customFont/bf9f5d50c1b928ff21436517a1a95ad9.woff") format("woff"), /* chrome、firefox */
+  url("customFont/bf9f5d50c1b928ff21436517a1a95ad9.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("customFont/bf9f5d50c1b928ff21436517a1a95ad9.svg#Proxima Nova") format("svg"); /* iOS 4.1- */
+}
+*{
+	box-sizing: border-box;
+	font-family: neusa-next-std, sans-serif;
+	font-weight: 300;
+}
+.outerWrapper{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: #f1f1f1;
+}
+.flexBox{
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+}
+.topBar{
+	background-color: #334559;
+	width: 100%;
+	height: 50px;
+}
+.contentArea{
+	width: 100%;
+	height: calc(100% - 80px);
+}
+.mainContent{
+	width: 85%;
+	box-sizing: border-box;
+	height: 100%;
+	overflow: auto;
+	padding: 20px;
+}
+.titleComp{
+	width: 15%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: 4px;
+}
+.titleComp > img{
+	height: 40%;
+	transition: all .3s;
+}
+.menuSpinner{
+	margin-right: auto;
+}
+.userSection{
+	width: auto;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	padding-right: 20px;
+	color: #fff;
+	font-size: 15px;
+}
+.sideMenu{
+	width: 15%;
+	background-color: #293a4d;
+}
+.sideMenu ul{
+	padding: 0px;
+	list-style: none;
+	width: 100%;
+	margin-right: 0px;
+}
+.sideMenu ul li a{
+	padding: 10px 20px;
+	color: rgba(255,255,255,.6);
+	font-size: 16px;
+	display: block;
+	text-decoration: none;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	justify-content: flex-start;
+	align-items: center;
+	transition: all .3s;
+}
+.sideMenu ul li a:hover, .sideMenu ul li a:focus{
+	box-shadow: 4px 0px 0px #87c847 inset;
+	background-color: rgba(0,0,0,.2);
+}
+.sideMenu ul li a img{
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+}
+.bottomBar{
+	width: 100%;
+	height: 30px;
+	background-color: #223142;
+}
+.bottomBar{
+	align-items: center;
+	justify-content: center;
+}
+.bottomBar a{
+	padding-left: 20px;
+	text-decoration: none;
+	color: rgba(255,255,255,.3);
+	font-size: 13px;
+}
+
+/*July 20 Style*/
+.pageMainTitle{
+	font-size: 21px;
+	font-weight: 500;
+	color: #293a4d;
+	text-align: left;
+	border-bottom: 1px solid #d8d8d8;
+	padding-bottom: 10px;
+	text-shadow: 1px 1px 3px rgba(0,0,0,.1);
+}
+.customRow{
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	padding:.625rem 0;
+}
+.ccWrap{
+	width: 30%;
+	margin-right: calc(10% / 3);
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	align-items: center;
+}
+.ccLabel{
+	width: 35%;
+	padding-right: 5px;
+}
+.ccInput{
+	width: 65%;
+}
+.ccInput input[type="text"], .ccInput select{
+	width: 100%;
+}
+.tilePreview{
+	width: 100%;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+}
+.tileBox{
+	width: 23%;
+	background-color: #fff;
+	position: relative;
+	cursor: pointer;
+}
+.tileIcon{
+	width: 80px;
+	background-color: #f1f1f1;
+	height: 80px;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	border-radius: 0px 10px 10px 0px;
+	box-shadow: -3px 0px 5px rgba(0,0,0,.1) inset;
+	background-color: rgba(249,202,36,.3);
+	margin: 10px 0px;
+	transition: all .3s;
+}
+.tileBox:hover .tileIcon{
+	background-color: rgba(249,202,36,1);
+}
+.tileIcon i{
+	transition: all .3s;
+}
+.tileBox:hover .tileIcon i{
+	margin-left: 10px;
+}
+.tileContent{
+	align-items: center;
+	justify-content: center;
+	width: calc(100% - 80px);
+	flex-direction: column;
+	line-height: 1.2;
+}
+.tileContent label{
+	font-size: 23px;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+.tileCounter{
+	justify-content: center;
+	align-items: center;
+	font-size: 33px;
+	border-radius: 10px 0px 0px 10px;
+	transition: all .3s;
+	font-weight: 600;
+	color: #f9ca24;
+}
