@@ -14,6 +14,7 @@
 	<div class="outerWrapper">
 		<div class="topBar flexBox">
 			<div class="menuSpinner" id="menuToggle">
+				
 			</div>
 			<div class="titleComp flexBox">
 				<img src="images/eLeave_Logo.svg">
@@ -40,14 +41,12 @@
 				</ul>
 			</div>
 			<div class="mainContent">
-				<h4 class="pageMainTitle">Summary</h4>
+				<h4 class="pageMainTitle flexBox">Summary <button type="button" class="ccBtn">Assign Leave</button></h4>
 				<div class="customRow flexBox">
 					<div class="ccWrap">
-						<div class="ccLabel">Employee</div>
+						<div class="ccLabel">Search</div>
 						<div class="ccInput">
-							<select class="form-control">
-							  <option>John Doe</option>
-							</select>
+							<input class="form-control" type="text" placeholder="Default input">
 						</div>
 					</div>
 					<div class="ccWrap">
@@ -58,51 +57,16 @@
 							</select>
 						</div>
 					</div>
-				</div>
-				<div class="tilePreview flexBox">
-					<div class="tileBox flexBox tileOrange">
-						<div class="tileIcon flexBox">
-							<i class="fa fa-money" aria-hidden="true"></i>
-						</div>
-						<div class="tileContent flexBox">
-							<label>Total</label>
-							<div class="tileCounter">21</div>
+					<div class="ccWrap">
+						<div class="ccLabel">Filter From</div>
+						<div class="ccInput">
+							<input class="form-control" type="date" placeholder="Default input">
 						</div>
 					</div>
-					<div class="tileBox flexBox tileBlue">
-						<div class="tileIcon flexBox">
-							<i class="fa fa-clock-o" aria-hidden="true"></i>
-						</div>
-						<div class="tileContent flexBox">
-							<label>Pending</label>
-							<div class="tileCounter">1</div>
-						</div>
-					</div>
-					<div class="tileBox flexBox tileGreen">
-						<div class="tileIcon flexBox">
-							<i class="fa fa-check" aria-hidden="true"></i>
-						</div>
-						<div class="tileContent flexBox">
-							<label>Approved</label>
-							<div class="tileCounter">9</div>
-						</div>
-					</div>
-					<div class="tileBox flexBox tileRed">
-						<div class="tileIcon flexBox">
-							<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-						</div>
-						<div class="tileContent flexBox">
-							<label>Rejected</label>
-							<div class="tileCounter">3</div>
-						</div>
-					</div>
-					<div class="tileBox flexBox tileGrey">
-						<div class="tileIcon flexBox">
-							<i class="fa fa-times" aria-hidden="true"></i>
-						</div>
-						<div class="tileContent flexBox">
-							<label>Cancelled</label>
-							<div class="tileCounter">4</div>
+					<div class="ccWrap">
+						<div class="ccLabel">Filter To</div>
+						<div class="ccInput">
+							<input class="form-control" type="date" placeholder="Default input">
 						</div>
 					</div>
 				</div>
